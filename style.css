@@ -3,12 +3,16 @@
   }
 
   .navbar {
-      padding: 10px;
+      padding: 5px;
       display: flex;
       gap: 10px;
       justify-content: space-between;
       border-bottom: solid black 1px;
       align-items: center;
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1;
   }
 
   .navbar__s1__title {
@@ -30,6 +34,7 @@
       border: none;
       width: 100%;
       align-items: center;
+      background-color: transparent;
 
   }
 
@@ -43,6 +48,25 @@
       align-items: center;
       padding: 10px;
       gap: 15px;
+  }
+
+  .mylearning {
+      position: relative;
+      cursor: pointer;
+  }
+
+  .mylearning__popup {
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    right: 0;
+    display: none;
+    padding: 5px;
+  }
+  .mylearning:hover .mylearning__popup{
+    display: block;
   }
 
   .categories {
@@ -61,10 +85,22 @@
 
   }
 
+  .sale-image {
+      position: relative;
+  }
+
+  .sale-image__offer {
+      width: 35%;
+      border: solid black 2px;
+      background-color: white;
+      padding: 2%;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+  }
+
   .sale-image img {
       width: 100%;
-
-
   }
 
   .recommended {
@@ -104,8 +140,13 @@
       width: 100%;
       border: solid grey 1px;
       padding: 10px;
-      flex-grow: 1;
+      flex-grow: 3;
       flex-basis: 10%;
+  }
+
+  .popular {
+
+      width: 100%;
   }
 
   .popular__container {
@@ -120,19 +161,26 @@
       gap: 10px;
   }
 
+  .footer_one p {
+      margin: 10px;
+  }
+
   .footer {
       padding: 10px;
+      margin-top: 20px;
       background-color: black;
       width: 100%;
       color: white;
+      display: block;
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
   }
 
-  .footer_two {
+  .footer__two {
       display: flex;
       justify-content: space-between;
-      margin: 10px;
+      margin: 20px;
       align-items: center;
 
 
@@ -140,5 +188,4 @@
 
   .footer p {
       margin: 20px;
-    
   }
